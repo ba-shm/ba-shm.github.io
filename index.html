@@ -1,12 +1,248 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Check</title>
+<meta charset="UTF-8">
+<title>Technical Portfolio - Balakumara Vignesh M</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+}
+
+.container{
+    display:flex;
+}
+
+/* LEFT PROFILE PANEL */
+
+.profile{
+    width:320px;
+    background:#2c185d;
+    color:white;
+    padding:25px;
+    height:100vh;
+    position:sticky;
+    top:0;
+}
+
+.profile h1{
+    font-size:20px;
+    margin-bottom:5px;
+}
+
+.profile h2{
+    font-size:18px;
+    font-weight:normal;
+    margin-top:0;
+    color:#cfd8e3;
+}
+
+.section-title{
+    margin-top:25px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.profile p{
+    font-size:16px;
+    line-height:1.5;
+}
+
+.profile ul{
+    padding-left:18px;
+}
+
+.profile li{
+    margin-bottom:6px;
+}
+
+/* RIGHT PROJECT AREA */
+
+.content{
+    flex:1;
+    padding:40px;
+    overflow-y:auto;
+    height:100vh;
+}
+
+.project{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:6px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project h3{
+    margin-top:0;
+    color:#1e2a38;
+}
+
+.label{
+    font-weight:bold;
+}
+
+.tools{
+    font-style:italic;
+    color:#444;
+}
+
+</style>
 </head>
+
 <body>
-	<h1>Test 101</h1>
-	<p>Testing github pages io</p>
-	<p><a href="redirect_102.html">Redirect</a></p>
+
+<div class="container">
+
+<!-- LEFT PANEL -->
+
+<div class="profile">
+
+<h1>M. Balakumara Vignesh</h1>
+<h2>Sensor Systems R&D Engineer</h2>
+
+<div class="section-title" ></div>
+<p style="justify-content: right;">
+    <a href="https://linkedin.com/in/bala-m" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+    <a href="https://github.com/ba-shm" target="_blank"><i class="fa fa-github fa-2x"></i></i></a>
+</p>
+<p>
+Current Location: India
+</p>
+
+<div class="section-title">Expertise</div>
+<ul>
+<li>Sensor characterization</li>
+<li>Calibration</li>
+<li>Data-driven modeling</li>
+<li>Experimental instrumentation</li>
+<li>Multi-sensor systems</li>
+<li>Uncertainty Quantification</li>
+</ul>
+
+<div class="section-title">Tools</div>
+<ul>
+<li>Python (scientific stack)</li>
+<li>MATLAB</li>
+<li>Embedded C</li>
+<li>Flask / Django</li>
+<li>MySQL, Mongo DB, InfluxDB</li>
+<li>HTML, CSS, Bootstrap, JavaScript</li>
+</ul>
+
+<div class="section-title">Research</div>
+<p>
+PhD – IIT Guwahati<br>
+Indo-EU LOTUS Project<br>
+Research Mobility: Université Gustave Eiffel
+</p>
+
+</div>
+
+
+<!-- RIGHT CONTENT -->
+
+<div class="content">
+
+<div class="project">
+<h3>Carbon Nanotube based Multiparametric Sensor System</h3>
+
+<p><span class="label"></span> Development of a low-cost multiparametric sensing platform for real-time water quality monitoring applications.</p>
+
+<p><span class="label">Contribution:</span></p>
+<ul>
+<li>Collaborated with international research teams for development and validation of a CNT-based multiparametric sensing system.</li>
+<li>Designed experimental workflows for sensor characterization and lifecycle testing.</li>
+<li>Implemented calibration and calibration-transfer models for multisensor systems.</li>
+<li>Developed models for simultaneous estimation of multiple parameters.</li>
+<li>Incorporated uncertainty quantification to assess sensor performance and reliability.</li>
+</ul>
+<p class="tools">Tools: Python, InfluxDB, Experimental Design, Statistical Analysis, Analog-Frontend</p>
+</div>
+
+
+<div class="project">
+<h3>Automated Experimentation Platform</h3>
+<p><span class="label"></span> Automation of calibration experiments for sensor characterization and model validation.</p>
+<p><span class="label">Contribution:</span></p>
+<ul>
+<li>Designed and automated a calibration test rig using Raspberry Pi control.</li>
+<li>Integrated real-time data acquisition with calibration model evaluation.</li>
+<li>Reduced operator intervention time from ~15 hours to ~1 hour.</li>
+</ul>
+<p class="tools">Tools: Raspberry Pi, Python, InfluxDB, Real-time DAQ programming</p>
+</div>
+
+
+<div class="project">
+<h3>IoT Sensor Data Acquisition Device</h3>
+<p><span class="label"></span> Development of embedded system for sensor data collection and IoT based monitoring.</p>
+<p><span class="label">Contribution:</span></p>
+<ul>
+<li>Contributed to development of UART-based sensor data acquisition device.</li>
+<li>Integrated device communication with monitoring dashboards.</li>
+<li>Supported system testing and deployment.</li>
+</ul>
+<p class="tools">Tools: ESP32 SoC, Python, UART, MQTT</p>
+</div>
+
+
+<div class="project">
+<h3>Decision Support System for Drilling Operations</h3>
+<p><span class="label"></span> Development of a decision support system assisting drilling supervisors in operational decision-making.</p>
+<p><span class="label">Contribution:</span></p>
+<ul>
+<li>Developed server-side web application with Django framework.</li>
+<li>Integrated engineering models via Dymola and MATLAB using OPC UA.</li>
+<li>Provided real-time data analytics and feedback support for the users.</li>
+</ul>
+<p class="tools">Tools: Python, Django, MS-SQL, Dymola, MATLAB, OPC-UA</p>
+</div>
+
+
+<div class="project">
+<h3>Engineering Simulation Virtual Laboratory</h3>
+<p><span class="label"></span> Web platform enabling students to run engineering simulations remotely.</p>
+<p><span class="label">Contribution:</span></p>
+<ul>
+<li>Developed web-based interface for simulation experiments.</li>
+<li>Integrated Dymola models using FMU/FMPy with Python.</li>
+<li>Enabled remote execution of dynamic system simulations.</li>
+</ul>
+<p class="tools">Tools: Python, Flask, FMPy, Dymola models</p>
+</div>
+
+<div class="project">
+<h3>Teaching assistant</h3>
+<p><span class="label">Contribution:</span>Facilitated instruction and grading for</p>
+<ul>
+<li>Process Control</li>
+<li>Optimization Techniques</li>
+<li>Application of AI ML in Chemical Engineering</li>
+</ul>
+</div>
+
+<div class="project">
+<h3>Compact Flow Totalizer Device</h3>
+<p><span class="label"></span> Portable microcontroller-based flow measurement system.</p>
+<p><span class="label">Contribution:</span></p>
+<ul>
+<li>Designed embedded flow measurement system, that cuts-off the flow after user defined volume.</li>
+<li>Implemented touchscreen interface and data acquisition.</li>
+<li>Delivered compact field-ready measurement device.</li>
+</ul>
+
+<p class="tools">Arduino, Embedded C</p>
+</div>
+
+</div>
+
+</div>
 
 </body>
 </html>
